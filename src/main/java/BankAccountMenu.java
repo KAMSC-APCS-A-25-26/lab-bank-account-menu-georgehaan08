@@ -24,7 +24,8 @@ public class BankAccountMenu {
                     if(x >= 0)
                     {
                         balance += x;
-                        System.out.println("New Balance: " + balance);
+                        System.out.println("Added " + balance);
+                        System.out.println("Current Balance: " + balance);
                     }
                     else
                     {
@@ -38,7 +39,8 @@ public class BankAccountMenu {
                     if(x <= balance)
                     {
                         balance -= x;
-                        System.out.println("New Balance: " + balance);
+                        System.out.println("Withdrew " + balance);
+                        System.out.println("Current Balance: " + balance);
                     }
                     else
                     {
@@ -47,7 +49,7 @@ public class BankAccountMenu {
                 break;
                 case 3:
                 {
-                    System.out.println(balance);
+                    System.out.println("Current Balance: " + balance);
                 }
                 break;
                 case 4:
