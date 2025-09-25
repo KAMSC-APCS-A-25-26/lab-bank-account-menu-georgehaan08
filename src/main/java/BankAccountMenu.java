@@ -13,14 +13,15 @@ public class BankAccountMenu {
             System.out.println("2. Withdraw Money");
             System.out.println("3. Check Balance");
             System.out.println("4. Exit");
-            System.out.println("Make a selection: ");
+            System.out.print("Make a selection: ");
             int choice = sc.nextInt();
+            sc.nextLine();
             switch(choice)
             {
                 case 1:
 
                     System.out.print("How much would you like to add?: ");
-                    double x = sc.nextInt();
+                    double x = sc.nextDouble();
                     if(x >= 0)
                     {
                         balance += x;
@@ -37,7 +38,7 @@ public class BankAccountMenu {
                 case 2:
 
                     System.out.print("How much would you like to subtract?: ");
-                    double y = sc.nextInt();
+                    double y = sc.nextDouble();
                     if(y <= balance)
                     {
                         balance -= y;
