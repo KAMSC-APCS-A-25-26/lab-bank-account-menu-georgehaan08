@@ -18,7 +18,7 @@ public class BankAccountMenu {
             switch(choice)
             {
                 case 1:
-                {
+
                     System.out.print("How much would you like to add?: ");
                     double x = sc.nextInt();
                     if(x >= 0)
@@ -31,14 +31,16 @@ public class BankAccountMenu {
                     {
                         System.out.println("Error");
                     }
-                }
-                break;
+                    break;
+
+
                 case 2:
+
                     System.out.print("How much would you like to subtract?: ");
-                    double x = sc.nextInt();
-                    if(x <= balance)
+                    double y = sc.nextInt();
+                    if(y <= balance)
                     {
-                        balance -= x;
+                        balance -= y;
                         System.out.println("Withdrew " + balance);
                         System.out.println("Current Balance: " + balance);
                     }
@@ -46,17 +48,20 @@ public class BankAccountMenu {
                     {
                         System.out.println("Error");
                     }
-                break;
+                    break;
+
                 case 3:
-                {
+
                     System.out.println("Current Balance: " + balance);
-                }
-                break;
+                    break;
+
+
                 case 4:
-                {
+
                     status = false;
                     System.out.println("Goodbye!");
-                }
+                    break;
+
             }
         }
 
