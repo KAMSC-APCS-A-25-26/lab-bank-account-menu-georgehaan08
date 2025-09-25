@@ -24,6 +24,7 @@ public class BankAccountMenu {
                     if(x >= 0)
                     {
                         balance += x;
+                        System.out.println("New Balance: " + balance);
                     }
                     else
                     {
@@ -37,6 +38,7 @@ public class BankAccountMenu {
                     if(x <= balance)
                     {
                         balance -= x;
+                        System.out.println("New Balance: " + balance);
                     }
                     else
                     {
